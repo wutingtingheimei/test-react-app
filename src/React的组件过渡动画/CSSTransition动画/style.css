@@ -1,0 +1,55 @@
+/* 编写css动画 */
+
+/* CSSTransition 的三个状态 */
+/* 开始状态：  enter （进入） exit （离开）   */
+/* 执行动画： enter-active  exit-active */
+/* 执行结束： enter-done  exit-done */
+
+/* appear 首次出现添加动画 */
+
+/* .why-appear{
+  transform: translateX(-150px);
+  -webkit-transform: translateX(-150px);
+  -moz-transform: translateX(-150px);
+  -ms-transform: translateX(-150px);
+  -o-transform: translateX(-150px);
+}
+
+.why-appear-active{
+  transform: translateX(0);
+  transition: transform 2s ease;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  -webkit-transition: transform 2s ease;
+  -moz-transition: transform 2s ease;
+  -ms-transition: transform 2s ease;
+  -o-transition: transform 2s ease;
+} */
+.why-appear, .why-enter{
+  opacity: 0;
+}
+
+.why-appear-active, .why-enter-active{
+  opacity: 1;
+  transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -ms-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+}
+
+.why-exit{
+ opacity: 1;
+}
+
+
+.why-exit-active{
+  opacity: 0;
+  transition: opacity 2s ease;
+  -webkit-transition: opacity 2s ease;
+  -moz-transition: opacity 2s ease;
+  -ms-transition: opacity 2s ease;
+  -o-transition: opacity 2s ease;
+}
